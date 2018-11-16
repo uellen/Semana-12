@@ -1,31 +1,27 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
-void substring (char s1[],char s2[], int q, int p){
-    int i = 0;
-    int j = p;
-    while (j <= q){
-        s2[i] = s1[j];
-        i++;
-        j++;
+int const SMAX = 51;
+struct data{
+    int dia;
+    int mes;
+    int ano;
+};
+struct funcionario{
+    char nome[SMAX];
+    data data_admissao;
+    int salaroo;
+};
+int main(){
+    char str1[51] = "bola";
+    char str2[51] = "bola";
+
+    if(str1 == str2){
+        cout<<"Ok, dá para fazer.\n";
     }
-    s2[j] = '\0';
-}
+    else{
+        cout<<"Tem que usar outro for.\n";
+    }
 
-int main (){
-
-    char str[51], saida[51];
-    int p, q;
-    cout<<"Insira uma string.\n";
-    cin>>str;
-    cout<<"Insira o interavalo superior.\n";
-    cin>>q;
-    cout<<"Insira o intervalo inferior.\n";
-    cin>>p;
-
-    substring (str,saida,q,p);
-    cout<<saida;
-
-    return 0;
+return 0;
 }
