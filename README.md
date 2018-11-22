@@ -1,3 +1,4 @@
 # Semana-12
 
-Trata de estudos com strings
+a brench master é o laboratório 15 sobre tipos estruturados.
+a brench string trata de estudos com strings
