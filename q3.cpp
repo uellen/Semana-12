@@ -14,11 +14,17 @@ int tamanho (char s[]){
 void alterna_caixa (char str1[], char str2[]){
     int i, n = tamanho(str1);
 
-    for(i = 0; i < n; i++){
-        str2[i] = (char)((int)str1[i] - 32);
+     for(i = 0; i < n; i++){
+        if((int)str1[i] > 96){
+            str2[i] = (char)((int)str1[i] - 32);
+        }
+        else if(str1[i] == ' '){
+            str2[i] = ' ';
+        }
+        else{
+            str2[i] = (char)((int)str1[i] + 32);
+        }
     }
-
-
 }
 
 int main()
