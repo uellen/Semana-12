@@ -34,9 +34,9 @@ void ordenar (char str1[]){
     int i = 0, j = 0;
     char aux;
 
-    for(i; i < n-1; i++){
-        for(j = (i+1); j < n-1; j++){
-            if(str1[j] < str1[i]){
+    for(i; i < n; i++){
+        for(j = (i+1); j < n; j++){
+            if(str1[j] > str1[i] && str1[j] != '\0' ){ //neste momento é importante que você tire os espaços tamabém.
                 aux = str1[i];
                 str1[i] = str1[j];
                 str1[j] = aux;
